@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+html {
+  /* Escala tipografica */
+    font-size: 62.5%;
+
+  /* Familias tipograficas */
+    --font-1: "Outfit", sans-serif;
+
+  /* Variables tipograficas */
+    --text-caption: 1rem;
+    --text-base: 1.5rem;
+    --text-title: 3rem;
+
+  /* Colores */
+    --primary-1: #000000;
+    --secondary-1: hsl(0, 0%, 100%);
+    --secondary-2: hsl(212, 45%, 89%);
+    --secondary-3: hsl(216, 15%, 48%);
+    --secondary-4: hsl(218, 44%, 22%);
+
+  /* Estilos para el scrollbar */
+    scrollbar-width: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 60px 0px;
+
+    color: var(--primary-1);
+    background-color: var(--secondary-2);
+
+    font-family: var(--font-1);
+    font-size: var(--text-base);
+    font-weight: 400;
+}
+
+.container {
+    max-width: 300px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 16px;
+    border-radius: 24px;
+
+    background-color: var(--secondary-1);
+
+    text-align: center;
+}
+
+.card-image {
+    width: 250px;
+    height: 250px;
+
+    border-radius: 16px;
+}
+
+h1 {
+    margin: 16px 0px;
+
+    font-size: var(--text-title);
+    font-weight: 700;
+}
+
+p {
+    margin: 16px 0px;
+
+    color: var(--secondary-3);
+
+    font-size: var(--text-base);
+    font-weight: 400;
+}
